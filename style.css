@@ -1,0 +1,440 @@
+/*   
+Theme Name: Fallen Leaves
+Theme URI: http://dev.aniketpant.com
+Description: A calm dark background
+Author: Aniket Pant
+Author URI: http://aniketpant.com
+Version: 1.2
+*/
+
+@import "css/1140.css";
+@import "css/ie.css";
+
+@font-face {
+        font-family: JUICE_Bold;
+        src: url("font/JUICE_Bold.ttf") format("truetype");
+}
+
+/*-- Containers: Body, page-wrap --*/
+body {
+        background: #000;
+        font-family: 'JUICE_Bold';
+        text-rendering: OptimizeLegibility;
+}
+
+#page-wrap {
+        background: url("images/body-bg.png") repeat-x;
+}
+
+/*-- Header --*/
+#header {
+        padding: 60px;
+        margin-left: 100px;
+        color: white;
+        z-index: 999;
+}
+
+#header h1 a {
+        color: white;
+        
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+}
+
+#header h1 a:hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+        
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+}
+
+.description {
+        width: 50px;
+        padding-left: 60px;
+        color: red;
+        cursor: default;
+}
+
+.description:first-letter {
+        font-size: 30px;
+}
+
+/*-- Links --*/
+a {
+        text-decoration: none;
+}
+
+/*-- General Typography --*/
+
+/*-- Menu --*/
+.menu {
+	background: #000;
+        background: rgba(0, 0, 0, 0.5);
+        
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+}
+
+.menu:hover {
+        background: rgba(0, 0, 0, 0.9);
+        
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+}
+
+#menu-main {
+	list-style: none;
+        padding: 20px 0px 20px 0px;
+        font-size: 20px;
+}
+
+#menu-main li {
+        display: inline-block;
+        margin-left: 20px;
+}
+
+#menu-main a {
+        display: inline-block;
+        
+        color: #fff;
+        
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+}
+
+#menu-main a:hover {
+        color: red;
+        
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+}
+
+#menu-main .current-menu-item a {
+        color: red;
+}
+
+	/* Level 2 */
+	#menu-main ul {
+                background: #000;
+		background: rgba(0, 0, 0, 0.5);
+		display: none;
+		padding: 10px;
+		list-style: none;
+		position: absolute;
+		z-index: 200;
+                
+                -webkit-border-bottom-right-radius: 20px;
+		-moz-border-radius-bottomright: 20px;
+		border-bottom-right-radius: 20px;
+                -webkit-border-bottom-left-radius: 20px;
+		-moz-border-radius-bottomleft: 20px;
+		border-bottom-left-radius: 20px;
+        
+                -webkit-transition: all 0.5s ease-in-out;
+                -moz-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+	}
+	#menu-main li:hover > ul { display: block; }
+	#menu-main ul li {
+	}
+	#menu-main li.current_page_parent a{
+            color: red;
+	}
+	#menu-main ul li#menu-item > a {
+	}
+	#menu-main ul li#menu-item > a:hover {
+	}
+	#menu-main ul.sub-menu li.current-menu-item > a {
+	}
+
+/*-- Content --*/
+#content {
+        color: #fff;
+        margin-top: 50px;
+}
+
+.pagetitle {
+        padding-bottom: 20px;
+}
+
+/*-- Hentry --*/
+.hentry, .post {
+        padding: 10px;
+        color: #fff;
+}
+
+.hentry h2 a {
+        color: #fff;
+}
+
+.entry {
+        margin-bottom: 40px;
+}
+
+.post {
+        background: #000;
+        opacity: 0.4;
+        padding: 20px;
+
+        -webkit-border-top-right-radius: 50px;
+        -moz-border-radius-topright: 50px;
+        border-top-right-radius: 50px;
+        -webkit-border-bottom-left-radius: 50px;
+        -moz-border-radius-bottomleft: 50px;
+        border-bottom-left-radius: 50px;
+        
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+}
+.post:hover {
+        background: #000;
+        opacity: 0.99;
+
+        -webkit-border-top-right-radius: 0px;
+        -moz-border-radius-topright: 0px;
+        border-top-right-radius: 0px;
+        -webkit-border-bottom-left-radius: 0px;
+        -moz-border-radius-bottomleft: 0px;
+        border-bottom-left-radius: 0px;
+
+        -webkit-border-top-left-radius: 50px;
+        -moz-border-radius-topleft: 50px;
+        border-top-left-radius: 50px;
+        -webkit-border-bottom-right-radius: 50px;
+        -moz-border-radius-bottomright: 50px;
+        border-bottom-right-radius: 50px;
+        
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+}
+
+/*-- Comments --*/
+#respond {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0.3;
+        margin: 20px 0px 20px 0px;
+        padding: 20px;
+        
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+}
+
+#respond:hover {
+        opacity: 0.9;
+        
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+}
+
+#respond a {
+        color: red;
+}
+
+#commentform {
+        
+}
+
+input[id=author] {
+        margin-top: 10px;
+}
+
+input[type=text] {
+        margin-bottom: 10px;
+}
+
+input[id=submit] {
+        margin-top: 10px;
+        margin-bottom: 10px;        
+        padding: 10px;
+        background: #666699;        
+        color: #fff;        
+        text-shadow: 0px 0px 1px #666, 0px 0px 2px #333;        
+        border: none;        
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;        
+        box-shadow: inset 0px 0px 5px #999, 0px 10px #666699;
+        
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+}
+
+input[id=submit]:hover {
+        margin-top: 14px;        
+        margin-bottom: 6px;        
+        box-shadow: inset 0px 0px 5px #999, 0px 6px #666699;
+        
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+}
+
+
+/*-- Meta --*/
+.postmetadata {
+    
+}
+
+.postmetadata a {
+        color: red;
+}
+
+.meta {
+        font-size: 14px;
+        text-align: right;
+        margin: 20px;
+}
+
+.meta a {
+        color: red;
+}
+
+.comments-link {
+        padding: 3px;
+}
+
+.post-edit-link {
+        padding-top: 50px;
+        color: red;
+}
+
+a.post-edit-link:hover {
+        color: #aaa;
+}
+
+/*-- Sidebar --*/
+#sidebar {
+        color: #fff;
+        margin-bottom: 40px;
+}
+
+/*-- Widgets --*/
+.widget {
+        background: rgba(0, 0, 0, 0.4);
+        
+        padding: 20px;
+        
+        -webkit-border-radius: 50px 0px 50px 0px;
+        -moz-border-radius: 50px 0px 50px 0px;
+        border-radius: 50px 0px 50px 0px;
+        
+        margin-bottom: 50px;
+        min-height: 100px;
+        
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        border-transition: all 0.2s ease-in-out;
+}
+
+.widget:first-child {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+        min-height: 100px;
+}
+
+.widget:hover > ul {    
+        -webkit-transform: rotate(-3deg);
+        -moz-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+        
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        border-transition: all 0.2s ease-in-out;
+}
+
+.widget ul {
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        border-transition: all 0.2s ease-in-out;
+}
+
+.widget li {
+        list-style: none;
+        padding-left: 10px;
+}
+
+.widget li a {
+        color: #999;
+        
+        -webkit-transition: color 0.2s ease-in-out;
+        -moz-transition: color 0.2s ease-in-out;
+        border-transition: color 0.2s ease-in-out;
+}
+
+.widget li a:hover {
+        color: red;
+        
+        -webkit-transition: color 0.2s ease-in-out;
+        -moz-transition: color 0.2s ease-in-out;
+        border-transition: color 0.2s ease-in-out;
+}
+
+/*-- Footer --*/
+#footer {
+        color: #fff;
+        background: #000;
+        opacity: 0.5;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        
+        -webkit-transition: opacity 0.2s ease-in-out;
+        -moz-transition: opacity 0.2s ease-in-out;
+        border-transition: opacity 0.2s ease-in-out;
+}
+
+#footer:hover {
+        opacity: 0.99;
+        
+        -webkit-transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        border-transition: opacity 0.5s ease-in-out;
+}
+
+#footer a {
+        color: #fff;
+        
+        -webkit-transition: color 0.5s ease-in-out;
+        -moz-transition: color 0.5s ease-in-out;
+        border-transition: color 0.5s ease-in-out;
+}
+
+#footer a:hover {
+        color: red;
+        
+        -webkit-transition: color 0.5s ease-in-out;
+        -moz-transition: color 0.5s ease-in-out;
+        border-transition: color 0.5s ease-in-out;
+}
+
+/*-- Other Elements --*/
+
+#img3 {
+        position: absolute;
+}
+
+#img2 {
+        position: absolute;
+        right: 0px;
+        bottom: -30%;
+}
+
+#img1 {
+        position: absolute;
+        top: 100px;
+        right: 0px;
+}
